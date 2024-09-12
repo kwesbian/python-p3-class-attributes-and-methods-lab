@@ -28,15 +28,15 @@ class TestSong:
 
     def test_has_genres(self):
         '''keeps track of all Song genres.'''
-        assert("Rap" in Song.genres)
-        assert("Pop" in Song.genres)
-        assert("Rock" in Song.genres)
+        assert("Rap" in Song.get_genres())
+        assert("Pop" in Song.get_genres())
+        assert("Rock" in Song.get_genres())
 
     def test_has_artists(self):
         '''keeps track of all Song artists.'''
-        assert("Jay Z" in Song.artists)
-        assert("Beyonce" in Song.artists)
-        assert("Hall and Oates" in Song.artists)
+        assert("Jay Z" in Song.get_artists())
+        assert("Beyonce" in Song.get_artists())
+        assert("Hall and Oates" in Song.get_artists())
         
     def test_has_genre_count(self):
         '''keeps count of Songs for each genre.'''
